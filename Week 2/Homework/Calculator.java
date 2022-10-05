@@ -1,18 +1,24 @@
-package JavaOptixTraining;
 import java.util.Scanner;
 import java.lang.Math;
 
 public class Calculator {
     
     public static void main(String[] args){
-        // scan is the input variable
+        // creates a scanner
         Scanner scan = new Scanner(System.in);
+        // this will store the input
         String input;
+        // index location of the first space in the input
         int space_at;
+        // the value of the first number
         double first_num;
-        int second_space_at;
-        String[] operation = new String[1];
+        // value of the second number
         double second_num;
+        // index location of the second space in the input
+        int second_space_at;
+        // string value of the operation. I am not sure why you wanted an array, but sure
+        String[] operation = new String[1];
+        // will put first and second num into this. Again, not sure why you wanted an array, but sure
         double[] nums = new double[2];
 
 
@@ -31,9 +37,11 @@ public class Calculator {
                 operation[0] = input.substring(space_at+1);
             }
             else{
+                // if there is a second pace, get its true index
                 second_space_at += space_at + 1;
-
+                // find the operation based on the location of the two spaces
                 operation[0] = input.substring(space_at+1, second_space_at);
+                // the second number is equal to the text after the second space
                 nums[1] = Integer.valueOf(input.substring(second_space_at+1));
             }
 

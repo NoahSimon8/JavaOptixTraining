@@ -1,5 +1,3 @@
-package JavaOptixTraining;
-
 
 public class Variables {
     
@@ -9,6 +7,11 @@ public class Variables {
         char first_letter = 'N';
         String last_name = "Simon";
         boolean programing_best = true;
+        System.out.println(age);
+        System.out.println(hieght);
+        System.out.println(first_letter);
+        System.out.println(last_name);
+        System.out.println(programing_best);
 
         
 
