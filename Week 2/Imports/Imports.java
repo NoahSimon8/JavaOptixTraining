@@ -29,7 +29,7 @@ public class Imports {
             if (guess == random_number){
                 System.out.println("You guessed the number!");
 
-            }
+            }   
             lives--;
         }
         if (lives == 0){
