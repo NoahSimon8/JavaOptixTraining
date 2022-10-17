@@ -23,7 +23,7 @@ Create a class called Shoot
 
 Create a class called Robot
  - Declare the Shooter and Shoot objects
- - Create a method called `teleopInit()` that calls the `initialize()` method of the Shoot object
+ - Create a method called `teleopInit()` that calls the `i  nitialize()` method of the Shoot object
  - Create a method called `teleopPeriodic()` that repeatedly calls the `execute()` method of the Shoot object IF the user enters the key "A" in the terminal
    - If the user enters the key "q", exit `teleopPeriodic()`
  - Create a method called `teleopEnd()` that calls the `end()` method of the Shoot object
