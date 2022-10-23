@@ -43,7 +43,7 @@ public class Lambdas {
         };
 
         counter.run();
-
+        inp.close();
     }
     
 }
