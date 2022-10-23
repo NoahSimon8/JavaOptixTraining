@@ -1,18 +1,46 @@
-public class Robot {
+import java.util.Scanner;
+
+public class Main{
+
+
+    public static void main(String[] args){
+
+        Robot robo = new Robot();
+        robo.telopInit();
+        robo.teleopPeriodic();
+
+    }
+}
+
+class Robot  {
     
     private Shoot shoot;
 
+    // constructer creating the shoot variable
     public Robot(){
         shoot = new Shoot(new Shooter());
 
     }
 
+    // initializes the shoot
     public void telopInit(){
         shoot.initialize();
+
+
     }
 
     public void teleopPeriodic(){
-        
+
+        Scanner scan = new Scanner(System.in);
+
+        String inp = scan.nextLine();
+        // System.out.
+        while (inp=="a"){
+            shoot.execute();
+            inp = scan.nextLine();
+
+        }
+
     }
 }
 
@@ -37,7 +65,7 @@ class Shoot{
     }
 
     // stops shooting
-    public end(){
+    public void end(){
         shooter.stop();
         System.out.println("Shooter stopped");
     }
